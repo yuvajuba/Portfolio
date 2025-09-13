@@ -45,7 +45,7 @@ def store_data(data):
 
 
 
-@app.route('/submit_form', methods=['POST', 'GET'])
+@app.route('/contact', methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
         try:

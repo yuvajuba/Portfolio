@@ -6,7 +6,7 @@
 }
 
 html {    
-    background-image: url(".assets/img/space.png");
+    background-image: url("./assets/img/space.png");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -167,4 +167,71 @@ button.submit-message:hover {
     cursor: pointer;
     transform: scale(1.6);
     color: red;
+}
+
+
+
+/* Thankyou page */
+
+.thanks-hold {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+}
+
+.thanks {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  animation: colorGlow 6s linear infinite,
+             pulse 2s infinite;
+}
+
+/* Cycle de couleurs */
+/* @keyframes color-change {
+  0%   { color: #ff4d4d; }
+  25%  { color: #ffa64d; }
+  50%  { color: #4dff88; }
+  75%  { color: #4db8ff; }
+  100% { color: #d24dff; }
+} */
+
+/* Pulsation zoom */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.5); }
+}
+
+
+@keyframes colorGlow {
+  
+  0%, 100% {
+    color: #ffffff;
+    text-shadow:
+      0 0 6px  #ffd700,
+      0 0 14px #ffd700,
+      0 0 28px #ffd700,
+      0 0 42px rgba(255, 215, 0, 0.6);
+  }
+
+  33.333% {
+    color: #ffd700;
+    text-shadow:
+      0 0 6px  #ff3b3b,
+      0 0 14px #ff3b3b,
+      0 0 28px #ff3b3b,
+      0 0 42px rgba(255, 59, 59, 0.6);
+  }
+
+  66.666% {
+    color: #ff3b3b; 
+    text-shadow:
+      0 0 6px  #ffffff,
+      0 0 14px #ffffff,
+      0 0 28px rgba(255,255,255,0.85),
+      0 0 42px rgba(255,255,255,0.55);
+  }
 }
