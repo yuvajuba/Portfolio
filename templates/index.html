@@ -1,82 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="description" name="description">
+    <title>Portfolio | Juba Bennour</title>
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
+    <link href="./static/style.css" rel="stylesheet" type="text/css">
+</head>
 
-  <title>Portfolio - homepage</title>  
-
-<link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
-
-<body class="minimal">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
-<!-- Add your content of header -->
 <header>
-  <nav class="navbar  navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="home">01 : Home</a></li>
-          <li><a href="./works.html" title="works">02 : Works</a></li>
-          <li><a href="./about.html" title="about-me">03 : About me</a></li>
-          <li><a href="./contact.html" title="contact">04 : Contact</a></li>
-        </ul>
-
-
-      </div> 
+    <div class="nav-content">
+        <nav class="hyperlinks-content">
+            <ul class="hyperlinks">
+                <li><a href="./index.html" class="active">01: Home</a></li>
+                <li>|</li>
+                <li><a href="./about.html">02: About me</a></li>
+                <li>|</li>
+                <li><a href="./contact.html">03: Contact me</a></li>
+            </ul>
+        </nav>
     </div>
-  </nav>
 </header>
-<!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./static/assets/images/space.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hello,<br>
-                <span id="typed-strings">
-                  <span>I'm Juba Bennour</span>
-                  <span>Junior bioinformatician</span>
-                  <span>Working as an engineer</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
-            </div>
-          </div>
+
+
+<body>
+    <div>
+        <div class="text-content">
+            <h1>Hello, <br>
+                <span id="typing"></span><span id="cursor">|</span>
+            </h1>
         </div>
-      </div>
     </div>
-  </div>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     type();
-     movingBackgroundImage();
-  });
-</script>
+    <script type="text/javascript" src="./static/script.js"></script>
+</body>
 
 
-<script type="text/javascript" src="./static/main.70a66962.js"></script></body>
 
 </html>
