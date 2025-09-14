@@ -9,15 +9,18 @@ html {
     background-image: url("./assets/img/space.png");
     background-size: cover;
     background-attachment: fixed;
+    height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
     width: 100%;
     height: 30vh;
-    /* background-image: url("./img/stars.jpg");
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: center; */
 }
 
 .nav-content {
@@ -79,8 +82,9 @@ a.active {
 
 body {
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
+    flex: 1;
 }
 
 h1 {
@@ -190,14 +194,6 @@ button.submit-message:hover {
              pulse 2s infinite;
 }
 
-/* Cycle de couleurs */
-/* @keyframes color-change {
-  0%   { color: #ff4d4d; }
-  25%  { color: #ffa64d; }
-  50%  { color: #4dff88; }
-  75%  { color: #4db8ff; }
-  100% { color: #d24dff; }
-} */
 
 /* Pulsation zoom */
 @keyframes pulse {
@@ -234,4 +230,41 @@ button.submit-message:hover {
       0 0 28px rgba(255,255,255,0.85),
       0 0 42px rgba(255,255,255,0.55);
   }
+}
+
+
+/* Footer part */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background-color: #00000077;
+}
+
+.copyright,
+.logo {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.logo a {
+  transition: all 0.5s;
+}
+
+.logo a:hover {
+  cursor: pointer;
+  transform: scale(1.6);
+}
+
+.foot-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
