@@ -68,8 +68,10 @@ def submit_form():
             data = request.form.to_dict()
             data = store_data(data)
 
+            # Sending an auto reply ! -------------------------------------------------
             html_tpl = Template(Path("templates/message.html").read_text())
-            html_bdy = html_tpl.substitute({"name": data["fullname"]})
+            html_bdy = html_tpl.substitute({"name": data["fullname"],
+                                            "message": data["message"]})
 
             email = EmailMessage()
             email["from"] = "Juba Bennour"
@@ -82,6 +84,26 @@ def submit_form():
                 smtp.starttls()
                 smtp.login(data["sender"], data["password"])
                 smtp.send_message(email)
+            
+            # Sending me a notification ! ----------------------------------------------
+            html_tpl = Template(Path("templates/notification.html").read_text())
+            html_bdy = html_tpl.substitute({"fullname": data["fullname"],
+                                            "email": data["email"],
+                                            "subject": data["subject"],
+                                            "message": data["message"]})
+
+            email = EmailMessage()
+            email["from"] = "Juba Bennour"
+            email["to"] = data["sender"]
+            email["subject"] = "Portfolio Notification"
+            email.set_content(html_bdy, "html")
+
+            with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
+                smtp.ehlo()
+                smtp.starttls()
+                smtp.login(data["sender"], data["password"])
+                smtp.send_message(email)
+
 
             return redirect("/thankyou.html")
         except Exception as e:

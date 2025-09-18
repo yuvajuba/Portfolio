@@ -233,6 +233,28 @@ button.submit-message:hover {
 }
 
 
+/* body part --- About me page */
+.body-content {
+  margin: 20px auto;
+  width: 80%;
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc {
+  width: 300px;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 20px;
+  background-color: #ffd70077;
+}
+
 /* Footer part */
 footer {
   margin-top: auto;
