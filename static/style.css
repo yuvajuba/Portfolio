@@ -234,26 +234,81 @@ button.submit-message:hover {
 
 
 /* body part --- About me page */
-.body-content {
+.bio-content {
   margin: 20px auto;
   width: 80%;
   min-height: 400px;
   height: auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio {
+  width: 65%;
+  height: auto;
+  min-height: 500px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 20px;
+  background-color: #ffd70077;
+}
+
+.img-profil {
+  width: 30%;
+  height: 500px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0px;
+  padding: 20px;
+  background-color: #ffd70077;
+}
+
+.heading2 {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  margin: 0px auto;
+  border: 2px solid gold;
+  border-radius: 10px;
+  background-color: #ffffff77;
+}
+
+h2 {
+  color: white;
+  font-size: 2.6rem;
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.bio-text {
+  font-size: 1.5rem;
+  text-shadow: #000000;
+  color: #ffffff;
+}
+
+
+.projects-content {
+  margin: 20px auto;
+  width: 80%;
+  min-height: 300px;
+  height: auto;
+  display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .bloc {
   width: 300px;
-  height: 400px;
+  height: 300px;
   border: 2px solid white;
   border-radius: 10px;
-  margin: 30px;
+  margin: 0px;
   padding: 20px;
   background-color: #ffd70077;
 }
+
 
 /* Footer part */
 footer {
